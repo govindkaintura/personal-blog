@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Tag extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -14,8 +14,6 @@ class Article extends Model
     protected $fillable = [
         'title',
         'slug',
-        'thumbnail',
-        'desc',
         'status',
     ];
 

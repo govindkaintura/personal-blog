@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Comment extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,11 +12,10 @@ class Article extends Model
      * @var array
      */
     protected $fillable = [
-        'title',
-        'slug',
-        'thumbnail',
-        'desc',
-        'status',
+        'article_id',
+        'fname',
+        'lname',
+        'email',
     ];
 
     /**
